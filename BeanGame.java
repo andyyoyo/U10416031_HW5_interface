@@ -21,7 +21,8 @@ public class BeanGame extends Application{
 		Line dl = new Line(105,210,105,240);
 		Line dr = new Line(305,210,305,240);
 		Line d = new Line(105,240,305,240);
-		
+	
+		//add all to the getChildren
 		p.getChildren().add(upl1);
 		p.getChildren().add(upr1);
 		p.getChildren().add(ll);
@@ -30,6 +31,7 @@ public class BeanGame extends Application{
 		p.getChildren().add(dr);
 		p.getChildren().add(d);
 		
+		//add the buttom line
 		Line[] line = new Line[8];
 		for(int i =1;i<=7;i++){
 			
