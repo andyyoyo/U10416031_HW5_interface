@@ -38,7 +38,48 @@ public class BeanGame extends Application{
 			line [i] = new Line(105+25*i,210,105+25*i,240);
 			p.getChildren().add(line[i]);
 		}
+
+		//add the balls in the pane
+		Circle cir = new Circle(200,50,2);
+		cir.setStroke(Color.GREEN);
 		
+		p.getChildren().add(cir);
+		Circle[] cir1 = new Circle[2];
+		for(int i=0;i<2;i++){
+			cir1[i] = new Circle(188.5+25*i,75,2);
+			cir1[i].setStroke(Color.GREEN);
+			p.getChildren().add(cir1[i]);
+		}
+		Circle[] cir2 = new Circle[3];
+		for(int i=0;i<3;i++){
+			cir2[i] = new Circle(177+25*i,100,2);
+			cir2[i].setStroke(Color.GREEN);
+			p.getChildren().add(cir2[i]);
+		}
+		Circle[] cir3 = new Circle[4];
+		for(int i=0;i<4;i++){
+			cir3[i] = new Circle(165.5+25*i,125,2);
+			cir3[i].setStroke(Color.GREEN);
+			p.getChildren().add(cir3[i]);
+		}
+		Circle[] cir4= new Circle[5];
+		for(int i=0;i<5;i++){
+			cir4[i] = new Circle(154+25*i,150,2);
+			cir4[i].setStroke(Color.GREEN);
+			p.getChildren().add(cir4[i]);
+		}
+		Circle[] cir5 = new Circle[6];
+		for(int i=0;i<6;i++){
+			cir5[i] = new Circle(142.5+25*i,175,2);
+			cir5[i].setStroke(Color.GREEN);
+			p.getChildren().add(cir5[i]);
+		}
+		Circle[] cir6 = new Circle[7];
+		for(int i=0;i<7;i++){
+			cir6[i] = new Circle(131+25*i,200,2);
+			cir6[i].setStroke(Color.GREEN);
+			p.getChildren().add(cir6[i]);
+		}
 		Scene scene = new Scene(p);
 		primaryStage.setTitle("Bean game");
 		primaryStage.setScene(scene);
